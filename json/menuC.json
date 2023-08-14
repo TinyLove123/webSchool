@@ -2,31 +2,31 @@
     "id": "recruit",
     "name":"fa-solid fa-user",
     "content":"Tuyển dụng",
-    "href":"/html/TuyenDung.html"
+    "href":"html/TuyenDung.html"
 },
 {
     "id": "Business-schedule",
     "name":"fa-solid fa-calendar-days",
     "content":"Lịch công tác",  
-    "href":"/html/LichCongTac.html"
+    "href":"html/LichCongTac.html"
 },
 {
     "id": "diagram",
     "name":"fa-solid fa-code-branch fa-rotate-180",
     "content":"Sơ đồ",
-    "href":"/html/SoDo.html"
+    "href":"html/SoDo.html"
 },
 {
     "id": "Alumni",
     "name":"fa-solid fa-tv",
     "content":"Cựu sinh viên",
-    "href":"/html/CuuSinhVien.html"
+    "href":"html/CuuSinhVien.html"
 },
 {
     "id": "Internal",
     "name":"fa-regular fa-envelope",
     "content":"TT nội bộ",
-    "href":"/html/TTNoiBo.html"
+    "href":"html/TTNoiBo.html"
 },
 {
     "id": "search",
