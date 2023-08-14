@@ -1,16 +1,16 @@
 [{
     "id": "1",
-    "src":"../images/event1.jpg",
-    "href":"html1.html"
+    "src":"../webShool/images/event1.jpg",
+    "href":"../webShool/html/html1.html"
 },
 {
     "id": "2",
-    "src":"../images/event2.jpg",
-    "href":"html2.html"
+    "src":"../webShool/images/event2.jpg",
+    "href":"../webShool/html/html2.html"
 },
 {
     "id": "3",
-    "src":"../images/event3.png",
-    "href":"html3.html"
+    "src":"../webShool/images/event3.png",
+    "href":"../webShool/html/html3.html"
 }
 ]
