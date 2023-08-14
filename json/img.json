@@ -1,0 +1,16 @@
+[{
+    "id": "1",
+    "src":"../images/event1.jpg",
+    "href":"html1.html"
+},
+{
+    "id": "2",
+    "src":"../images/event2.jpg",
+    "href":"html2.html"
+},
+{
+    "id": "3",
+    "src":"../images/event3.png",
+    "href":"html3.html"
+}
+]

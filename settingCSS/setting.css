@@ -1,0 +1,340 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2000px;
+    background-color: white;
+    position: relative;
+}
+.header{
+    background-color: #1d559f;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.left{
+    margin-left: 20px;
+}
+.right{
+    margin-left: 30px;
+}
+.right ul.right-menu-1{
+    text-align: center;
+    list-style: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.right-menu-1 li{
+    margin-top: 20px;
+    height: 90px;
+    padding-top: 0;
+    max-width: 30%;
+    padding: 20px 20px;
+    border-right: 1px solid;
+    transform: skewX(-20deg);
+}
+.search {
+    display: none;
+    background-color: antiquewhite;
+    top:0;
+    right: 30px;
+    height: 35px;
+    font-size: 80%;
+    position: absolute;
+    z-index: 9999;
+    border: 3px solid white;
+    border-radius: 4px/4px;
+
+}
+.search i.iCon{
+    padding: 10px 10px;
+    background-color: gray;
+    color: black;
+}
+.right-menu-1 li i{
+    font-size: 160%;
+    padding: 10px 10px;
+    color: rgb(141, 209, 187);
+}
+.right-menu-1 li a{
+    margin-top: 30px;
+    color: rgb(248, 245, 245,0.3);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    position: relative;
+}
+.right-menu-1 li a span{
+    display: inline-block;
+    font-size: 150%;
+    position: absolute;
+    top: -30px; /* Điều chỉnh vị trí của icon */
+    left: 50%; /* Điều chỉnh vị trí của icon */
+    transform: translateX(-50%); /* Đưa icon vào giữa */
+}
+.right-menu-1 li:hover a{
+    color: white;
+}
+.menu-2{
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+}
+.menu-2 li{
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.menu-2 li.content:hover{
+    color: aqua;
+    z-index: 100;
+}
+.menu-2 .div{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 10px 1px;
+}
+.menu-2 .div ul.menu-c{
+    list-style: none;
+    min-width: 300px;
+    padding: 10px 10px;
+}
+.menu-2 .div ul.menu-c li a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 10;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(210, 207, 207);
+    color: black;
+}
+.menu-2 .sub:hover .div{
+    display:flex;
+    background-color: rgba(230, 233, 236, 0.9);
+}
+.div ul.menu-c li a:hover{
+    color: red;
+}
+.slider{
+    overflow: hidden;
+}
+.images{
+    position: relative;
+    width: 100%;
+}
+.images>div{
+    width: 90%;
+    height: 100%;
+    box-sizing: content-box;
+    margin: auto;
+}
+.images img{
+    width: 100%;
+    height: 426.633px;
+    margin-bottom: 5px; 
+}
+.control{
+    display: block;
+    position: absolute;
+    top: 50%;
+    font-size: 200%;   
+    transform: translateY(-50px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%/50%;
+}
+.control:hover{
+    background-color: aqua;
+    border: 1px solid darkblue;
+}
+.images:hover .control{
+    display: block;
+    color: rgb(84, 21, 180);
+    font-weight: bold; /* Chữ đậm khi hover */
+}
+.after{
+    padding: 5px;
+    text-align: center;
+    right: 10px;
+}
+.before{
+    padding: 6px;
+    text-align: center;
+    left: 10px;
+}
+@keyframes sliceRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes sliceLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes sliceRight-out{
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.section-info .info-list{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+.info-list .info-Item{
+    display: inline-block;
+    max-width:25%;
+    margin: 10px 10px;
+    list-style: none;
+    position: relative;
+}
+.section-info .info-Item h1{
+    font-size: 120%;
+    color: blueviolet;
+    text-align: inherit;
+}
+.section-info .info-Item .info-link{
+    text-decoration: none;
+}
+.info-list .info-Item .info-img{
+    display: block;
+    width: 250px;
+    height: 200px !important;
+    margin: auto;
+    float: left;
+    padding: 3px;
+
+}
+.info-control{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 200px;
+    transform: translateY(-10px);
+}
+.info-control i{
+    text-align: center;
+    font-size: medium;
+}
+.frev{
+    border-radius: 5px/5px;
+    overflow: hidden;
+    max-width: 30px;
+    padding: 10px 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    background-color: aqua;
+}
+.next{
+    border-radius: 5px/5px;
+    overflow: hidden;
+    margin-left: 10px;
+    max-width: 30px;
+    left: 20px;
+    padding: 10px 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    background-color: bisque;
+   
+}
+.info-link .info{
+    padding-bottom: 30px;
+}
+.info-link .info .info-content{
+    display: inline-block;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.info-list .info-Item .description{
+    display: inline-block;
+    text-align: justify;
+    color: rgb(35, 123, 123);
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+.source-content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.source-content .content-item{
+    max-width: 30%;
+    display: flex;
+    margin: 10px 10px;
+    border: 1px solid rgb(118, 118, 104);
+    text-decoration: none;
+}
+.source-content .content-item .content-item-icon{
+    padding: 10px 10px;
+}
+.source-content .content-item .content-item-description{
+    max-width: 70%;
+    margin-top: 10px;
+    display: block;
+    padding: 10px 10px;
+}
+.source-content .content-item .content-item-description h1,p{
+    font-size: small;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #1d559f;
+    height: 600px;
+    color: aliceblue;
+}
+.footer-header{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    text-align: justify;
+    border-bottom: 1px solid wheat ;
+}
+.mention,.footer-mention-right{
+    width: 50%;
+}
+.footer-logo,.footer-mention-left{
+    width: 50%;
+}
+.footer-header div p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.footer-footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-footer h1{
+    font-weight: 400;
+}
+.footer-footer div{
+    margin-top: 20px;
+}
+

@@ -1,0 +1,57 @@
+[{
+    "id":"1",
+    "src":"../images/td1.jpg",
+    "href":"#",
+    "name":"Thông báo danh sách trúng tuyển viên chức năm học 2021-2022",
+    "description":"DANH SÁCH TRÚNG TUYỂN VIÊN CHỨC(Theo quyết định số 1753/QĐ-ĐHM)"
+},
+{
+    "id":"2",
+    "src":"../images/td2.jpg",
+    "href":"#",
+    "name":"Thông báo kết quả kiểm tra phiếu đăng ký dự tuyển (vòng 1) và ứng viên đủ tiêu chuẩn, điều kiện tham dự phỏng vấn vòng 2 kỳ tuyển dụng viên chức Giảng viên và Chuyên viên năm 2023",
+    "description":"Căn cứ vào biên bản họp xét công nhận kết quả kiểm tra Phiếu đăng..."
+},
+{
+    "id":"3",
+    "src":"../images/td3.jpg",
+    "href":"#",
+    "name":"Tuyển dụng viên chức ngạch chuyên viên – Năm 2023",
+    "description":"Nhân sự về Kế hoạch tuyển dụng viên chức ngạch chuyên viên năm 2023"
+},
+{
+    "id":"4",
+    "src":"../images/td4.jpg",
+    "href":"#",
+    "name":"Thông báo danh sách trúng tuyển viên chức năm học 2021-2022",
+    "description":"DANH SÁCH TRÚNG TUYỂN VIÊN CHỨC(Theo quyết định số 1753/QĐ-ĐHM)"
+    
+},
+{
+    "id":"5",
+    "src":"../images/td5.jpg",
+    "href":"#",
+    "name":"Tuyển dụng giảng viên cơ hữu trình độ Thạc sĩ – Năm 2023",
+    "description":"Căn cứ kế hoạch số 87/KH-TCNS ngày 10/03/2023 của Phòng Tổ chức – Nhân sự về Kế hoạch tuyển dụng giảng viên cơ hữu năm 2023"
+},
+{
+    "id":"6",
+    "src":"../images/td6.jpg",
+    "href":"#",
+    "name":"Thông báo kết quả tuyển dụng viên chức vị trí giảng viên năm học 2021-2022 (đợt bổ sung)",
+    "description":"Căn cứ Luật Viên chức số 58/2010/QH12 và Luật sửa đổi, bổ sung một số điều của Luật Cán bộ, Công chức và Luật Viên chức số 52/2019/QH14..."
+},
+{
+    "id":"7",
+    "src":"../images/td1.jpg",
+    "href":"#",
+    "name":"Tuyển dụng giảng viên cơ hữu trình độ Thạc sĩ Năm học 2021-2022 (đợt bổ sung)",
+    "description":"Trường Đại học Mở Thành phố Hồ Chí Minh cần tuyển giảng viên cơ hữu..."
+},
+{
+    "id":"8",
+    "src":"../images/td7.jpg",
+    "href":"#",
+    "name":"Tuyển dụng Viên chức – ngạch Chuyên viên Năm học 2021-2022 (đợt bổ sung)",
+    "description":"DANH SÁCH TRÚNG TUYỂN VIÊN CHỨC – GIẢNG VIÊN TRÌNH ĐỘ TIẾN SĨ NĂM HỌC..."
+}]
