@@ -1,5 +1,5 @@
 function loadMenu(){
-    fetch("../json/menu.json").then(res=>res.json()).then(json=>{
+    fetch("../webShool/json/menu.json").then(res=>res.json()).then(json=>{
         let p="";
         for(let c of json)
         {
@@ -24,7 +24,7 @@ function loadMenu(){
 }
 function loadEvent()
 {
-    fetch("../json/img.json").then(res=>res.json()).then(data=>{
+    fetch("../webShool/json/img.json").then(res=>res.json()).then(data=>{
     var b=data
     var bf=document.querySelector('.before')
     var af=document.querySelector('.after')
