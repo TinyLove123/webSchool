@@ -1,5 +1,5 @@
 function loadMenu(){
-    fetch("../json/menu.json").then(res=>res.json()).then(json=>{
+    fetch("../json/menuC.json").then(res=>res.json()).then(json=>{
         let p="";
         for(let c of json)
         {
