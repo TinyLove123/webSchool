@@ -3,7 +3,7 @@ function loadMenu(){
         let p="";
         for(let c of json)
         {
-            p+=`<li id=${c.id}>   
+            p+=`<li id=${c.id}>
                     <a href="${c.href}"><span class="${c.name}"></span>${c.content}</a>
                 </li>`;
         }
@@ -94,31 +94,33 @@ function loadNotice(){
         var info=information;
         var infoList=document.querySelector(".info-list")
         var firstchild=infoList.querySelector(':first-child')
-        var infoIndex=1;
+        var infoImg=firstchild.querySelector(".info-img")
+        var infocontent=firstchild.querySelector(".info-content")
+        var description=firstchild.querySelector(".description > p")
+        var prev=firstchild.querySelector(".frev")
+        var next=firstchild.querySelector(".next")
+        var infoIndex=2;
         function changeNotice(index){
-            firstchild.innerHTML=`
-            <h1>TIN TỨC</h1>
-                <a href="#" class="info-link">   
-                    <div>
-                        <img id="info-img" class="info-img" src="${information[index].src}" alt="">                      
-                    </div>               
-                    <div class="info">
-                        <span id="info-content" class="info-content">
-                             ${information[index].infocontent}
-                        </span>
-                    </div>
-                </a>
-                <span id="description" class="description"><p>${information[index].description}</p></span>
-                <div class="info-control" >
-                    <div class="frev"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="next"> <i class="fa-solid fa-chevron-right"></i></div> 
-                </div> 
-
-            `
+            infoImg.setAttribute("src",info[index].src)
+            infocontent.innerHTML=`${info[index].infocontent}`
+            description.innerHTML= `${info[index].description}`
+        }
+    prev.addEventListener('click',e=>{
+        infoIndex--
+        if(infoIndex===-1){
+            infoIndex=info.length-1
         }
         changeNotice(infoIndex)
-
     })
+    next.addEventListener('click',e=>{
+        infoIndex++
+        if(infoIndex===info.length){
+            infoIndex=0
+        }  
+        changeNotice(infoIndex)
+    })
+    })
+    
 }
 
 window.onload=()=>{

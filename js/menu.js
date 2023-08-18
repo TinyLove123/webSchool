@@ -1,5 +1,5 @@
 function loadMenu(){
-    fetch("./json/menuC.json").then(res=>res.json()).then(json=>{
+    fetch("../json/menuC.json").then(res=>res.json()).then(json=>{
         let p="";
         for(let c of json)
         {
@@ -23,7 +23,7 @@ function loadMenu(){
     })
 }
 function loadData(){
-    fetch("./json/data.json").then(res=>res.json()).then(data=>{
+    fetch("../json/data.json").then(res=>res.json()).then(data=>{
         let q="";
         for(let x of data)
         {
