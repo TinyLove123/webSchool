@@ -89,8 +89,40 @@ function loadEvent()
     })
 
 }
+function loadNotice(){
+    fetch("json/info.json").then(res=>res.json()).then(information=>{
+        var info=information;
+        var infoList=document.querySelector(".info-list")
+        var firstchild=infoList.querySelector(':first-child')
+        var infoIndex=1;
+        function changeNotice(index){
+            firstchild.innerHTML=`
+            <h1>TIN TỨC</h1>
+                <a href="#" class="info-link">   
+                    <div>
+                        <img id="info-img" class="info-img" src="${information[index].src}" alt="">                      
+                    </div>               
+                    <div class="info">
+                        <span id="info-content" class="info-content">
+                             ${information[index].infocontent}
+                        </span>
+                    </div>
+                </a>
+                <span id="description" class="description"><p>${information[index].description}</p></span>
+                <div class="info-control" >
+                    <div class="frev"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="next"> <i class="fa-solid fa-chevron-right"></i></div> 
+                </div> 
+
+            `
+        }
+        changeNotice(infoIndex)
+
+    })
+}
 
 window.onload=()=>{
     loadEvent()
     loadMenu()
+    loadNotice()
 }
