@@ -119,12 +119,18 @@ function loadNotice(){
         }  
         changeNotice(infoIndex)
     })
-    })
-    
+    }) 
 }
-
+function loadMenuResPonSive(){
+    button=document.querySelector(".button")
+    MenuResPonSive=document.querySelector(".menu-2-responsive")
+    button.addEventListener("click",function(){
+        MenuResPonSive.classList.toggle("show");
+    })
+}
 window.onload=()=>{
     loadEvent()
     loadMenu()
     loadNotice()
+    loadMenuResPonSive()
 }

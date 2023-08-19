@@ -123,15 +123,16 @@ body{
     display:flex;
     background-color: rgba(230, 233, 236, 0.9);
 }
-.div ul.menu-c li a:hover{
-    color: red;
-}
-.menu-responsive{
-        display: none;
+.icon-menu-2{
+    display: none;
 }
 .menu-2-responsive{
-    margin-left: -100%;
     position: absolute;
+    margin-left: -200%;
+    transition: all .5s;
+}
+.div ul.menu-c li a:hover{
+    color: red;
 }
 .slider{
     overflow: hidden;
@@ -359,8 +360,28 @@ footer{
     .menu-responsive{
         display: block;
     }
-    .menu-2-responsive{
+    .icon-menu-2{
         display: block;
+    }
+    .menu-2-responsive{
+        display: flex;
+        line-height: 30px;
+        list-style: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        z-index: 9999;
+        justify-content: space-between;
+        background-color: rgba(32, 63, 220, 0.7);
+        margin-left: -200%;
+        transition: all .5s;
+    }
+    .menu-2-responsive li{
+        min-width: 45%;
+        padding-left: 30px;
+        margin: 10px;
+    }
+    .menu-2-responsive.show{
+        margin-left: 0%;
     }
     .icon-menu-2{
         margin: 20px;
