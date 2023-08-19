@@ -127,6 +127,7 @@ body{
     display: none;
 }
 .menu-2-responsive{
+    width: 100%;
     position: absolute;
     margin-left: -200%;
     transition: all .5s;
@@ -359,6 +360,7 @@ footer{
     }
     .menu-responsive{
         display: block;
+
     }
     .icon-menu-2{
         display: block;
