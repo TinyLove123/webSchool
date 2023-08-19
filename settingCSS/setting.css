@@ -497,6 +497,12 @@ footer{
 }
 }
 @media(max-width:480px){
+    .menu-2-responsive{
+        width: 100%;
+        position: absolute;
+        margin-left: -200%;
+        transition: all .5s;
+    }
     .source-content{
         width: 100%;
     }
