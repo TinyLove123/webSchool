@@ -56,7 +56,7 @@ section.inFo .contain{
     padding-left: 10px;
     text-align: justify;
 }
-@media(max-width:690px){
+@media (max-width:690px){
     .section-notify-item{
         width: 100% !important;
     }

@@ -279,6 +279,7 @@ body{
     font-weight: 600;
     font-size: 16px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .info-list .info-Item .description{
     display: inline-block;
@@ -499,6 +500,9 @@ footer{
 }
 }
 @media(max-width:480px){
+    .info-Item{
+        height: 400px !important;
+    }
     .info-1 img{
         height: auto !important;
     }
@@ -522,11 +526,13 @@ footer{
     .source-content{
         width: 100%;
     }
+    .info-Item{
+        height: 550px !important;
+    }
     .info-link{
         width: 100% !important;
         display: block;
         justify-content: space-around;
-        height: 500px !important;
     }   
     .info-1{
     width: 100%;
