@@ -126,6 +126,13 @@ body{
 .div ul.menu-c li a:hover{
     color: red;
 }
+.menu-responsive{
+        display: none;
+}
+.menu-2-responsive{
+    margin-left: -100%;
+    position: absolute;
+}
 .slider{
     overflow: hidden;
 }
@@ -342,6 +349,24 @@ footer{
 .footer-footer div{
     margin-top: 20px;
 }
+@media (max-width:1000px)
+{
+    .menu-2{
+        display: none;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menu-responsive{
+        display: block;
+    }
+    .menu-2-responsive{
+        display: block;
+    }
+    .icon-menu-2{
+        margin: 20px;
+    }
+
+}
 @media (max-width:768px){
     body{
         width: 100%;
@@ -365,11 +390,6 @@ footer{
   }
   .menu-2{
     max-width: 100%;
-}
-.menu-2 li{
-    display: none;
-    text-align: center;
-    text-decoration: none;
 }
   .section-info .info-list {
     display: flex;
