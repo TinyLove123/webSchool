@@ -414,6 +414,7 @@ footer{
     list-style: none;
     height: auto;
     padding-bottom: 10px;
+    border: none;
 }
     .right-menu-1 li a{
     font-size: small;
