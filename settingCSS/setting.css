@@ -202,15 +202,12 @@ body{
     width: 85%;
     margin: auto;
 }
-.info-list{
-    height: 600px;
-}
 .info-list .info-Item{
     display: inline-block;
     max-width:25%;
     margin: 10px 10px;
     list-style: none;
-    position: relative;
+    position: relative; 
 }
 .section-info .info-Item h1{
     font-size: 120%;
@@ -245,7 +242,6 @@ body{
     max-width: 30px;
     padding: 10px 10px;
     display: block;
-    position: absolute;
     cursor: pointer;
     user-select: none;
     background-color: aqua;
@@ -258,7 +254,6 @@ body{
     left: 20px;
     padding: 10px 10px;
     display: block;
-    position: absolute;
     cursor: pointer;
     user-select: none;
     background-color: bisque;
@@ -286,6 +281,7 @@ body{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .source-content .content-item{
     max-width: 30%;
@@ -343,16 +339,90 @@ footer{
 .footer-footer div{
     margin-top: 20px;
 }
-@media (max-width:600px){
-  .header{
-    width: 600px;
+@media (max-width:768px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .header{
+    width: 100%;
     display: block;
     height: auto;
+}
+    .left{
+    width: 90%;
+}
+    .right-menu-1 li{
+    max-width: 15%;
+    text-align: center;
+    padding: 0;
   }
-  .left{
+    .right-menu-1 li a{
+    font-size: small;
+  }
+  .section-info .info-list {
+    display: flex;
     width: 100%;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+}
+  .info-list .info-Item{
+    min-width: 100%;
+    min-height: 300px;
   }
-  .right-menu-1 li a{
-    width: 20%;
+  .info-list .info-Item h1{
+    text-align: center;
   }
+  .info-link{
+    display: flex;
+    justify-content: space-around;
+  }
+  .images{
+    width: 100%;
+}
+.info-1{
+    width: 45%;
+}
+.info{
+    width: 45%;
+}
+.info .info-content{
+    font-size: 15px !important;
+}
+.info .description p{
+    font-size: 15px !important;
+
+}
+.source-content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.source-content .content-item{
+    max-width: 45%;
+    display: flex;
+    margin: 10px 10px;
+    border: 1px solid rgb(118, 118, 104);
+    text-decoration: none;
+}
+.source-content{
+    width: 100%;
+}
+.content-item-description{
+    max-width: 60% !important;
+    padding-right: 0;
+}
+.content-item-icon{
+    width: 35%;
+}
+.footer-header{
+    width: 100%;
+}
+.footer-logo{
+    width: 40%;
+}
 }

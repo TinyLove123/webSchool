@@ -182,20 +182,66 @@ section.inFo .contain{
     padding-left: 10px;
     text-align: justify;
 }
-table{
+section.freQuency{
     width: 80%;
     margin: auto;
+}
+table{
+    text-indent: initial;
     border: 1px solid #1868b7;
     border-collapse: separate;
     border-spacing: 0;
 }
-table th{
-    max-width: 13%;
-}
-table tr th{
-    padding: 15px 30px;
+table td{
+    padding: 15px;
     text-align: left;
     border: 1px solid #131314;
+    vertical-align: middle !important;
+    max-width: 25%;
+    display: table-cell;
+    font-size: 13px;
+}
+/*Ending LichCongTac.html*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: #1d559f;
+    height: 600px;
+    color: aliceblue;
+}
+.footer-header{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    text-align: justify;
+    border-bottom: 1px solid wheat ;
+}
+.mention,.footer-mention-right{
+    width: 50%;
+}
+.footer-logo,.footer-mention-left{
+    width: 50%;
+}
+.footer-header div p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.footer-footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-footer h1{
+    font-weight: 400;
+}
+.footer-footer div{
+    margin-top: 20px;
+}
+p{
+    padding-bottom: 10px;
 }
 
 
