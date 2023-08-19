@@ -428,9 +428,16 @@ footer{
     }
     .info .description p{
         font-size: 15px !important;
-    
     }
-
+    
+}
+@media (max-width:860px){
+    .source-content{
+        width: 90% !important;
+    }
+    .content-item{
+        width: 40% !important;
+    }
 }
 @media (max-width:720px){
     body{
@@ -471,12 +478,11 @@ footer{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .source-content .content-item{
-    max-width: 45%;
+    max-width: 50%;
     display: flex;
-    margin: 10px 10px;
     border: 1px solid rgb(118, 118, 104);
     text-decoration: none;
 }
