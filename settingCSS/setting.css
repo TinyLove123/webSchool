@@ -217,7 +217,7 @@ body{
     margin: 10px 10px;
     list-style: none;
     position: relative;
-    height: 700px;
+    height: 650px;
 }
 .section-info .info-Item h1{
     font-size: 120%;
@@ -463,6 +463,9 @@ footer{
   }
   .menu-2{
     max-width: 100%;
+}
+.info-Item{
+    height: 300px !important;
 }
 .source-content{
     margin: auto;
