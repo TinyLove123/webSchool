@@ -230,7 +230,7 @@ body{
 }
 .info-list .info-Item .info-img{
     width: 100%;
-    height: 250px !important;
+    height: 300px !important;
     margin: auto;
     float: left;
     padding: 3px;
@@ -499,9 +499,9 @@ footer{
     text-align: center;
 }
 }
-@media(max-width:480px){
+@media(max-width:600px){
     .info-Item{
-        height: 400px !important;
+        height: 500px !important;
     }
     .info-1 img{
         height: auto !important;
@@ -516,7 +516,7 @@ footer{
         width: 65% !important;
     }
 }
-@media(max-width:400px){
+@media(max-width:320px){
     .menu-2-responsive{
         width: 100%;
         position: absolute;
