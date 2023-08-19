@@ -519,7 +519,7 @@ footer{
         width: 65% !important;
     }
 }
-@media(max-width:340px){
+@media(max-width:400px){
     .menu-2-responsive{
         width: 100%;
         position: absolute;
