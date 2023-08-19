@@ -504,7 +504,7 @@ footer{
 }
 @media(max-width:600px){
     .info-Item{
-        height: 550px !important;
+        height: 500px !important;
     }
     .info-1 img{
         height: auto !important;
