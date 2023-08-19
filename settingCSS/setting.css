@@ -526,6 +526,7 @@ footer{
         width: 100% !important;
     }
     .source .source-content .content-item{
-        min-width: 100% !important;
+        min-width: 90% !important;
+        margin: auto;
     }
 }
