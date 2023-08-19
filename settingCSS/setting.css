@@ -500,11 +500,14 @@ footer{
     display: block;
 }
 .footer-logo{
-    width: 100% !important;
+    width: 40% !important;
     text-align: center;
 }
-.mention{
+.footer-logo img{
     width: 100%;
+}
+.mention{
+    width: 60%;
     text-align: center;
 }
 }

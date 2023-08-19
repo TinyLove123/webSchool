@@ -147,6 +147,7 @@ table{
     border: 1px solid #1868b7;
     border-collapse: separate;
     border-spacing: 0;
+    margin-bottom: 30px;
 }
 table td{
     padding: 15px;
