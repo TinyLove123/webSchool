@@ -46,7 +46,15 @@ function loadData(){
             e.innerHTML = q; 
     })
 }
+function loadMenuResPonSive(){
+    button=document.querySelector(".button")
+    MenuResPonSive=document.querySelector(".menu-2-responsive")
+    button.addEventListener("click",function(){
+        MenuResPonSive.classList.toggle("show");
+    })
+}
 window.onload=()=>{
     loadMenu()
     loadData()
+    loadMenuResPonSive()
 }
