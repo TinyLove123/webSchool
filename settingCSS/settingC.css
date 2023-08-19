@@ -344,8 +344,11 @@ footer{
     display: block;
 }
 .footer-logo{
-    width: 100%;
+    width: 100% !important;
     text-align: center;
+}
+.footer-logo img{
+    width: 100%;
 }
 .mention{
     width: 100%;
