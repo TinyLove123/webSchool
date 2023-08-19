@@ -378,7 +378,7 @@ footer{
         transition: all .5s;
     }
     .menu-2-responsive li{
-        min-width: 45%;
+        min-width: 40%;
         padding-left: 30px;
         margin: 10px;
     }
