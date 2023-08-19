@@ -496,7 +496,7 @@ footer{
     text-align: center;
 }
 }
-@media(max-width:480px){
+@media(max-width:320px){
     .menu-2-responsive{
         width: 100%;
         position: absolute;
