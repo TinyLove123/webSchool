@@ -512,12 +512,20 @@ footer{
         display: block;
         justify-content: space-around;
         height: 500px !important;
-}   
-.info-1{
+    }   
+    .info-1{
     width: 100%;
-}
-.info{
+    }
+    .info{
     width: 100%;
-}
-    
+    }
+    .source{
+        width: 100%;
+    }
+    .source-content{
+        width: 100% !important;
+    }
+    .source .source-content .content-item{
+        min-width: 100% !important;
+    }
 }
