@@ -452,7 +452,7 @@ footer{
     width: 45%;
 }
 .info{
-    width: 45%;
+    width: 50%;
 }
 .info .info-content{
     font-size: 15px !important;
@@ -479,10 +479,9 @@ footer{
 }
 .content-item-description{
     max-width: 60% !important;
-    padding-right: 0;
 }
 .content-item-icon{
-    width: 35%;
+    width: 40%;
 }
 .footer-header,.footer-footer{
     width: 100%;
@@ -497,7 +496,21 @@ footer{
     text-align: center;
 }
 }
-@media(max-width:320px){
+@media(max-width:480px){
+    .info-1 img{
+        height: auto !important;
+    }
+    .content-item-icon{
+        width: 30% !important;
+    }
+    .content-item-icon img{
+        width: 100%;
+    }
+    .content-item-description{
+        width: 65% !important;
+    }
+}
+@media(max-width:400px){
     .menu-2-responsive{
         width: 100%;
         position: absolute;
