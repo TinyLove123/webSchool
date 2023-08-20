@@ -369,6 +369,9 @@ footer{
 }
 @media (max-width:1000px)
 {
+    .over{
+        min-width: 100% !important;
+    }
     .menu-2{
         display: none;
         text-align: center;
@@ -551,6 +554,9 @@ footer{
     }
     .source-content{
         width: 100%;
+    }
+    .over{
+        width: 100% !important;
     }
     .info-Item{
         height: 600px !important;
