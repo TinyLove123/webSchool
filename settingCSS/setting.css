@@ -71,6 +71,7 @@ body{
     display: inline-block;
     font-size: 100%;
     position: relative;
+    transition: .5s;
 }
 .right-menu-1 li a span{
     display: inline-block;
@@ -81,7 +82,8 @@ body{
     transform: translateX(-50%); /* Đưa icon vào giữa */
 }
 .right-menu-1 li:hover a{
-    color: white;
+    color: rgb(231, 172, 210);
+    transform: scale(1.2);
 }
 .menu-2{
     max-width: 85%;
@@ -94,10 +96,14 @@ body{
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
+    line-height: 30px;
+    transition: .5s;
 }
 .menu-2 li.content:hover{
     color: aqua;
     z-index: 100;
+    background-color: rgb(77, 42, 205);
+    border-radius: 50%;
 }
 .menu-2 .div{
     margin-top: 10px;
