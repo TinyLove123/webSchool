@@ -90,16 +90,19 @@ function loadEvent()
 
 }
 function loadNotice(){
+        var infoList=document.querySelectorAll(".info-Item")
+        var firstchild=infoList[0]
+        var secondchild=infoList[1]
+        var thirdchild=infoList[2]
     fetch("json/info.json").then(res=>res.json()).then(information=>{
         var info=information;
-        var infoList=document.querySelector(".info-list")
-        var firstchild=infoList.querySelector(':first-child')
+        
         var infoImg=firstchild.querySelector(".info-img")
         var infocontent=firstchild.querySelector(".info-content")
         var description=firstchild.querySelector(".description > p")
         var prev=firstchild.querySelector(".frev")
         var next=firstchild.querySelector(".next")
-        var infoIndex=2;
+        var infoIndex=0;
         function changeNotice(index){
             infoImg.setAttribute("src",info[index].src)
             infocontent.innerHTML=`${info[index].infocontent}`
@@ -110,14 +113,96 @@ function loadNotice(){
         if(infoIndex===-1){
             infoIndex=info.length-1
         }
-        changeNotice(infoIndex)
+        firstchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            firstchild.style.animation='sliceRight 0.5s ease-in-out'
+        },200)
     })
     next.addEventListener('click',e=>{
         infoIndex++
         if(infoIndex===info.length){
             infoIndex=0
         }  
-        changeNotice(infoIndex)
+        firstchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            firstchild.style.animation='sliceLeft 0.5s ease-in-out'
+        },200)
+    })
+    }) 
+    fetch("json/info1.json").then(res=>res.json()).then(informationsecond=>{
+        var info=informationsecond;
+        
+        var infoImg=secondchild.querySelector(".info-img")
+        var infocontent=secondchild.querySelector(".info-content")
+        var description=secondchild.querySelector(".description > p")
+        var prev=secondchild.querySelector(".frev")
+        var next=secondchild.querySelector(".next")
+        var infoIndex=0;
+        function changeNotice(index){
+            infoImg.setAttribute("src",info[index].src)
+            infocontent.innerHTML=`${info[index].infocontent}`
+            description.innerHTML= `${info[index].description}`
+        }
+    prev.addEventListener('click',p=>{
+        infoIndex--
+        if(infoIndex===-1){
+            infoIndex=info.length-1
+        }
+        secondchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            secondchild.style.animation='sliceRight 0.5s ease-in-out'
+        },200)
+        
+    })
+    next.addEventListener('click',p=>{
+        infoIndex++
+        if(infoIndex===info.length){
+            infoIndex=0
+        }  
+        secondchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            secondchild.style.animation='sliceLeft 0.5s ease-in-out'
+        },200)
+    })
+    }) 
+    fetch("json/info2.json").then(res=>res.json()).then(informationthird=>{
+        var info=informationthird;
+        var infoImg=thirdchild.querySelector(".info-img")
+        var infocontent=thirdchild.querySelector(".info-content")
+        var description=thirdchild.querySelector(".description > p")
+        var prev=thirdchild.querySelector(".frev")
+        var next=thirdchild.querySelector(".next")
+        var infoIndex=0;
+        function changeNotice(index){
+            infoImg.setAttribute("src",info[index].src)
+            infocontent.innerHTML=`${info[index].infocontent}`
+            description.innerHTML= `${info[index].description}`
+        }
+    prev.addEventListener('click',p=>{
+        infoIndex--
+        if(infoIndex===-1){
+            infoIndex=info.length-1
+        }
+        thirdchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            thirdchild.style.animation='sliceRight 0.5s ease-in-out'
+        },200)
+    })
+    next.addEventListener('click',p=>{
+        infoIndex++
+        if(infoIndex===info.length){
+            infoIndex=0
+        }  
+        thirdchild.style.animation=''
+        setTimeout(()=>{
+            changeNotice(infoIndex)
+            thirdchild.style.animation='sliceLeft 0.5s ease-in-out'
+        },200)
     })
     }) 
 }

@@ -102,8 +102,8 @@ body{
 .menu-2 li.content:hover{
     color: aqua;
     z-index: 100;
-    background-color: rgb(77, 42, 205);
-    border-radius: 50%;
+    background-color: rgb(7, 16, 18);
+    border-radius: 2px/2px;
 }
 .menu-2 .div{
     margin-top: 10px;
@@ -217,13 +217,21 @@ body{
     width: 85%;
     margin: auto;
 }
+.over{
+    position: relative;
+    overflow: hidden;
+    max-width: 25%;
+    
+}
 .info-list .info-Item{
     display: inline-block;
-    max-width:25%;
+    max-width:100%;
     margin: 10px 10px;
     list-style: none;
-    position: relative;
+    
     height: 650px;
+    transition: 1s;
+    
 }
 .section-info .info-Item h1{
     font-size: 120%;
@@ -246,7 +254,7 @@ body{
     position: absolute;
     text-align: center;
     display: flex;
-    top: 240px;
+    top: 300px;
     transform: translateY(-10px);
 }
 .info-control i{

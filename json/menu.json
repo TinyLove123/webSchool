@@ -23,12 +23,6 @@
     "href":"./html/CuuSinhVien.html"
 },
 {
-    "id": "Internal",
-    "name":"fa-regular fa-envelope",
-    "content":"TT nội bộ",
-    "href":"./html/TTNoiBo.html"
-},
-{
     "id": "search",
     "name":"fa-brands fa-searchengin",
     "content":"Tìm kiếm",
