@@ -582,4 +582,17 @@ footer{
         min-width: 90% !important;
         margin: auto;
     }
+    .footer-header{
+        min-width: 100% !important;
+    }
+    .footer-logo{
+        width: 100% !important;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .mention{
+        width: 100%;
+        text-align: justify;
+    }
 }
