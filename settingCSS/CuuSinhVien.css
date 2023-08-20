@@ -1,0 +1,17 @@
+.small{
+    width: auto;
+}
+.img-csv{
+    width: 90%;
+    margin: auto;
+}
+.img-csv img{
+    max-width: 100%;   
+}
+.small p{
+    text-align: justify;
+}
+@media (max-width:320px)
+{
+
+}

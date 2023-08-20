@@ -1,0 +1,91 @@
+.GTC{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 35px 10px 50px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.GTC-item{
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+    padding: 10px 0;
+    border-top: 1px solid;
+    margin-left: 20px;
+}
+.GTC-item a{
+    text-decoration: none;
+}
+.img{
+    width: 80%;
+    margin: auto;
+}
+.img img{
+    width: 100%;
+}
+.if{
+    max-width: 80%;
+    margin: auto;
+}
+.grid>img{
+    width: 100%;
+}
+.row1{
+    width: 100%;
+    display: flex;
+}
+.row1 div{
+    max-width: 50%;
+}
+.content-item{
+    max-width: 80% !important;
+}
+.content-item ul{
+    list-style: none;
+    padding-right: 0;
+}
+.content-item ul p{
+    font-size: 15px;
+}
+.content-item ul h1{
+    font-size: 20;
+}
+.row{
+    display: flex;
+}
+.row .icon{
+    max-width: 25%;
+}
+.content-item h1{
+    padding: 10px 0 10px 0;
+}
+@media(max-width:320px){
+    .GTC{
+        display: block;
+        min-width: 100%;
+    }
+    .GTC-item{
+        min-width: 100%;
+        margin: 0px;
+    }
+    .if{
+        min-width: 90%;
+        text-align: justify;
+    }
+    .row1{
+        display: block;
+    }
+    .row{
+        min-width: 100% !important;
+        display: flex;
+    }
+    .icon{
+        width: 20%;
+    }
+    .content-item{
+        max-width: 70%;
+    }
+
+}

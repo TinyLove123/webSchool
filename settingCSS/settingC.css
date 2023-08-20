@@ -194,7 +194,9 @@ table td{
     font-size: 25px;
     color: #444444;
 }
-
+.content-small{
+    border-bottom: 1px solid rgb(200, 192, 192);
+}
 footer{
     width: 100%;
     position: absolute;

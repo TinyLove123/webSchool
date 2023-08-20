@@ -1,0 +1,35 @@
+.contaner{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contaner .contaner-item{
+    max-width: 30%;
+    padding: 20px;
+}
+.contaner-item h3{
+    font-size: medium;
+    text-align: center;
+}
+.contaner-item a{
+    text-decoration: none;
+}
+.contaner-item p{
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 90%;
+    text-align: justify;
+}
+@media(max-width:320px){
+    .GTC{
+        display: block;
+        min-width: 100%;
+    }
+    .GTC-item{
+        min-width: 100%;
+        margin: 0px;
+    }
+}

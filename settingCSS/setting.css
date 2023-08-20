@@ -120,7 +120,7 @@ body{
     color: black;
 }
 .menu-2 .sub:hover .div{
-    display:flex;
+    display: block;
     background-color: rgba(230, 233, 236, 0.9);
 }
 .icon-menu-2{

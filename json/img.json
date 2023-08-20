@@ -1,12 +1,12 @@
 [{
     "id": "1",
     "src":"./images/event1.jpg",
-    "href":"./html/html1.html"
+    "href":"./html/TBLS.html"
 },
 {
     "id": "2",
     "src":"./images/event2.jpg",
-    "href":"./html/html2.html"
+    "href":"./html/TLCD.html"
 },
 {
     "id": "3",
