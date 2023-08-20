@@ -171,6 +171,7 @@ section h1 a{
 }
 .announce {
     width: 25%;
+    background-image: linear-gradient(white,gray);
 }
 .announce .icon{
     width: 70%;
@@ -218,6 +219,44 @@ input.user-name{
 input.password{
     width: 70%;
 }
+footer{
+    width: 100%;
+    background-color: #90b1dc;
+    color: rgb(2, 5, 8);
+}
+.footer-header{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    text-align: justify;
+    border-bottom: 1px solid wheat ;
+}
+.mention,.footer-mention-right{
+    width: 50%;
+}
+.footer-logo,.footer-mention-left{
+    width: 50%;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-header div p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.footer-footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-footer h1{
+    font-weight: 400;
+}
+.footer-footer div{
+    margin-top: 20px;
+}
 @media (max-width:400px){
     .menu{
         display: none;
@@ -259,5 +298,23 @@ input.password{
     }
     .right{
         width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-header,.footer-footer{
+        width: 100%;
+        display: block;
+    }
+    .footer-logo{
+        width: 100% !important;
+        text-align: center;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .mention{
+        width: 100%;
+        text-align: justify;
     }
 }
