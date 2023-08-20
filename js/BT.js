@@ -96,7 +96,6 @@ function loadNotice(){
         var thirdchild=infoList[2]
     fetch("json/info.json").then(res=>res.json()).then(information=>{
         var info=information;
-        
         var infoImg=firstchild.querySelector(".info-img")
         var infocontent=firstchild.querySelector(".info-content")
         var description=firstchild.querySelector(".description > p")
