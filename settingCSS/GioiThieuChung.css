@@ -61,7 +61,7 @@
 .content-item h1{
     padding: 10px 0 10px 0;
 }
-@media(max-width:400px){
+@media(max-width:600px){
     .GTC{
         display: block;
         min-width: 100%;
