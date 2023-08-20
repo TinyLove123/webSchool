@@ -1,6 +1,5 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height: 1000px;
 }
 header.main-menu{
     background-color: rgb(64, 174, 213);
@@ -26,21 +25,23 @@ header{
     width: 100%;
     border-radius: 5px/5px;
     position: fixed;
+    height: 80px;
 }
 .menu li.nav{   
-    position: relative;
+    display: block;
     width: 11%;
     font-size: 20px;
     border-left: 2px solid;
     border-right: none;
 }
 .menu li.nav i{
-    padding: 0px 10px;
+    padding-right: 10px;
 }
 .menu li.nav:first-child{
     border-left: 0;
 }
 .menu li.nav:last-child{
+    position: relative;
     width: 17%;
 }
 .menu li.nav a.icon-list{
@@ -50,6 +51,13 @@ header{
     text-decoration: none;
     height: 100%;
     transition: 0.3s;
+}
+.menu li a{
+    padding: 20px;
+    font-size: medium;
+}
+.menu-responsive{
+    display: none;
 }
 ul.flex a:active{
     color: rgb(5, 148, 60);
@@ -209,4 +217,47 @@ input.user-name{
 }
 input.password{
     width: 70%;
+}
+@media (max-width:400px){
+    .menu{
+        display: none;
+    }
+    .menu-responsive{
+        position: absolute;
+        display: block;
+        margin-left: -200%;
+    }
+    .menu-responsive li{
+        line-height: 30px;
+    }
+    .logo{
+        width: 100%;
+    }
+    section{
+        display: block;
+        width: 100%;
+    }
+    .left-side h1{
+        display: none;
+    }
+    .left-side{
+        width: 100% !important;
+        display: block;
+    }
+    .left{
+        flex-direction: column;
+    }
+    .announce{
+        width: 100%;
+    }
+    .lishInfo{
+        width: 100%;
+    }
+    .right-side{
+        width: 100% !important;
+        height: 200px;
+    }
+    .right{
+        width: 100%;
+    }
 }
